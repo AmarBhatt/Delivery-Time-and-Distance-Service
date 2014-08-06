@@ -12,12 +12,12 @@ This entire service is not dependent on any external service or library. It can 
 
 The getDistance code reads in a file of two comma deliminated addresses (addresses.csv).  These are written in the order of origin and destination.  Once these addresses are processed by google maps using an http request, the result is written to the distanceResult.csv file. The format for the output is shown below:
 
-if success: "ORIGIN USED BY GOOGLE","DESTINATION USED BY GOOGLE","MILES","ADDRESS/ZIPCODE"
-	 I am checking whether or not Google is reading the address or doing it by zipcode (Google does this for us).  Basically, if the address is bogus it will use the zipcode and you will see in the outputted addresses an address that just has city state and zip instead of the address.  However, if the zipcode is bogus but the address is sound it will fix the zipcode/state for you. Hence the last field "ADDRESS/ZIPCODE" represents how it was proccessed by Google.
+* if success: "ORIGIN USED BY GOOGLE","DESTINATION USED BY GOOGLE","MILES","ADDRESS/ZIPCODE"
+** I am checking whether or not Google is reading the address or doing it by zipcode (Google does this for us).  Basically, if the address is bogus it will use the zipcode and you will see in the outputted addresses an address that just has city state and zip instead of the address.  However, if the zipcode is bogus but the address is sound it will fix the zipcode/state for you. Hence the last field "ADDRESS/ZIPCODE" represents how it was proccessed by Google.
 
-if bad response: "INPUT ORIGIN","INPUT DESTINATION","ERROR","ERROR MESSAGE FROM GOOGLE"
+* if bad response: "INPUT ORIGIN","INPUT DESTINATION","ERROR","ERROR MESSAGE FROM GOOGLE"
 
-if bad input: "ERROR MESSAGE"
+* if bad input: "ERROR MESSAGE"
 
 I have commented the code, as well as put error checks in it. Also, the outputs for the code give you the estimated driving time as well as the estimated driving distance in miles (driving time is implemented in code but not shown in output). 
 
