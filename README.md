@@ -4,7 +4,7 @@ Delivery-Time-and-Distance-Service
 A time and distance estimator between two addresses using VBScript and Google Maps Distance Matrix API
 
 
-I was asked to solve the problem of getting an accurate distance for two addresses for delivery planning.  This needed to be done without relying on external dependencies or libraries.  It also needed to be run from the command line, which needed to read and write a file.  I chose VBScript because I was solving for a customer whose clients all ran windows machines.  My customer also writes code in VBS and C, so he will be able to maintain and add to the code I have written.
+I was asked to solve the problem of getting an accurate distance for two addresses for delivery planning.  This needed to be done without relying on external dependencies or libraries.  It also needed to be run from the command line, which needed to read and write a file.  I chose VBScript because I was solving for a someone whose clients all ran on windows machines. Also, VBScript works well alongside the programs he has created.
 
 This uses the google maps distance matrix api (https://developers.google.com/maps/documentation/distancematrix/). 
 
