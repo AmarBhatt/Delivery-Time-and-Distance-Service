@@ -1,3 +1,6 @@
+' Testing --> http://maps.googleapis.com/maps/api/distancematrix/xml?origins=125+Ormsby+Dr+Syracuse+NY+13219&destinations=60+Lomb+Memorial+Drive+NY+13219&mode=driving&language=en-EN
+
+
 ' Get the file path
 dim fso: set fso = CreateObject("Scripting.FileSystemObject")
 
