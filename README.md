@@ -19,7 +19,8 @@ The getDistance code reads in a file of two comma deliminated addresses (address
 
 * if bad input: "ERROR MESSAGE"
 
-I have commented the code, as well as put error checks in it. Also, the outputs for the code give you the estimated driving time as well as the estimated driving distance in miles (driving time is implemented in code but not shown in output). 
+I have commented the code, as well as put error checks in it. Also, the outputs for the code give you the estimated driving time as well as the estimated driving distance in miles (driving time is implemented in code but not shown in output). The input and output files can be configured
+in the config.ini file.
 
 Let me know if you have any questions or requests! I'd be happy to help :)
 
